@@ -8,6 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-provider-patment8001" />
+        <module name="api-common" />
+        <module name="cloud-eureka-server-7001" />
         <module name="cloud-comsuer-order80" />
       </profile>
     </annotationProcessing>

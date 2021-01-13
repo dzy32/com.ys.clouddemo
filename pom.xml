@@ -10,6 +10,8 @@
   <modules>
     <module>cloud-provider-patment8001</module>
       <module>cloud-comsuer-order80</module>
+      <module>api-common</module>
+      <module>cloud-eureka-server-7001</module>
   </modules>
   <packaging>pom</packaging>
 

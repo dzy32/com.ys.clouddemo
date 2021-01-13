@@ -1,7 +1,8 @@
 package com.ys.clouddemo.payment.service;
 
-import com.ys.clouddemo.payment.entity.Payment;
+
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ys.demo.entity.Payment;
 
 /**
  * <p>

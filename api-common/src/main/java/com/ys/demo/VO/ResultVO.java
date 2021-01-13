@@ -1,4 +1,4 @@
-package com.ys.clouddemo.payment.VO;
+package com.ys.demo.VO;
 
 import lombok.Data;
 

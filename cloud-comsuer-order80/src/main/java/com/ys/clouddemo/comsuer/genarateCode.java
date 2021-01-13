@@ -1,4 +1,4 @@
-package com.ys.demo;
+package com.ys.clouddemo.comsuer;
 
 
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;

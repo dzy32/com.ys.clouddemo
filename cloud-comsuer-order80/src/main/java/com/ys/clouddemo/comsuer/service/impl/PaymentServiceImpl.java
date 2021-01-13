@@ -1,9 +1,10 @@
 package com.ys.clouddemo.comsuer.service.impl;
 
-import com.ys.clouddemo.comsuer.entity.Payment;
+
 import com.ys.clouddemo.comsuer.mapper.PaymentMapper;
 import com.ys.clouddemo.comsuer.service.IPaymentService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ys.demo.entity.Payment;
 import org.springframework.stereotype.Service;
 
 /**

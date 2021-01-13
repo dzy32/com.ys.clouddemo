@@ -1,7 +1,9 @@
 package com.ys.clouddemo.payment.mapper;
 
-import com.ys.clouddemo.payment.entity.Payment;
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.ys.demo.entity.Payment;
+
 
 /**
  * <p>

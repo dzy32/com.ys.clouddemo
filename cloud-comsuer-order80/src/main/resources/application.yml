@@ -1,0 +1,28 @@
+server:
+  port: 8082
+
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://47.97.91.45:3306/cloud_demo?characterEncoding=utf8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: order-service
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  type-aliases-package: com.ys.clouddemo.entity
+  global-config:
+    banner: false
+    db-config:
+      update-strategy: ignored
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka

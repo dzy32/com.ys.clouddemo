@@ -1,10 +1,10 @@
-package com.ys.clouddemo.comsuer.entity;
+package com.ys.demo.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import java.io.Serializable;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
 
 /**
  * <p>
@@ -23,7 +23,6 @@ public class Payment implements Serializable {
     /**
      * 主键
      */
-    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     /**
