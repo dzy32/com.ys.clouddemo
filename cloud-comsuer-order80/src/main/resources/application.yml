@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 80
 
 
 spring:
@@ -25,4 +25,5 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:7001/eureka
+      # 域名只是在host文件做了映射。其实ip都是127.0.0.1
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/

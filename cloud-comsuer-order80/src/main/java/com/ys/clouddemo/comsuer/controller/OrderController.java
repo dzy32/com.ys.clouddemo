@@ -18,19 +18,20 @@ import org.springframework.web.client.RestTemplate;
 public class OrderController {
 
 
-    private static final String PAYMNET_URL= "http://localhost:8081";
+    @Autowired
+    private RestTemplate restTemplate;
+
+    private static final String PAYMNET_URL= "http://PAYMENT-SERVICE";
 
     @GetMapping("/get/{id}")
     public ResultVO<Payment> getPay(@PathVariable("id") String id){
-        RestTemplate restTemplate = new RestTemplate();
+
 
         return restTemplate.getForObject(PAYMNET_URL.concat("/payment/payment/get/").concat(id),ResultVO.class);
     }
 
     @PostMapping("/add")
     public ResultVO<Payment> addPay(@RequestBody Payment payment){
-        RestTemplate restTemplate = new RestTemplate();
-
         return restTemplate.postForObject(PAYMNET_URL.concat("/payment/payment/add"),payment,ResultVO.class);
     }
 }

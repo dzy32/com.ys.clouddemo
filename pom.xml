@@ -12,6 +12,8 @@
       <module>cloud-comsuer-order80</module>
       <module>api-common</module>
       <module>cloud-eureka-server-7001</module>
+    <module>cloud-eureka-server7002</module>
+    <module>cloud-provider-payment8082</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -123,6 +125,14 @@
         <artifactId>maven-site-plugin</artifactId>
         <configuration>
           <locales>en,fr</locales>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <fork>true</fork>
+          <addResources>true</addResources>
         </configuration>
       </plugin>
     </plugins>
