@@ -4,6 +4,7 @@ package com.ys.clouddemo.comsuer.controller;
 
 import com.ys.demo.VO.ResultVO;
 import com.ys.demo.entity.Payment;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -15,6 +16,7 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 @RequestMapping("/order")
+@Slf4j
 public class OrderController {
 
 
@@ -25,6 +27,7 @@ public class OrderController {
 
     @GetMapping("/get/{id}")
     public ResultVO<Payment> getPay(@PathVariable("id") String id){
+
 
 
         return restTemplate.getForObject(PAYMNET_URL.concat("/payment/payment/get/").concat(id),ResultVO.class);
