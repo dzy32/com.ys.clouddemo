@@ -10,7 +10,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   # 注册进eureka名称
   application:
-    name: payment-service
+    name: com.ys.clouddemo.payment-service
 mybatis-plus:
   mapper-locations: classpath*:mapper/**/*Mapper.xml
   type-aliases-package: com.ys.clouddemo.entity

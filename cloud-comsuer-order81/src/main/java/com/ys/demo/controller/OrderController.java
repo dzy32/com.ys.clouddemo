@@ -1,4 +1,4 @@
-package com.ys.clouddemo.comsuer.controller;
+package com.ys.demo.controller;
 
 
 
@@ -23,18 +23,26 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String PAYMNET_URL= "http://PAYMENT-SERVICE";
+    private static final String PAYMNET_URL= "http://payment-service";
 
     @GetMapping("/get/{id}")
     public ResultVO<Payment> getPay(@PathVariable("id") String id){
 
 
 
-        return restTemplate.getForObject(PAYMNET_URL.concat("/com.ys.clouddemo.payment/com.ys.clouddemo.payment/get/").concat(id),ResultVO.class);
+        return restTemplate.getForObject(PAYMNET_URL.concat("/payment/payment/get/").concat(id),ResultVO.class);
     }
 
     @PostMapping("/add")
     public ResultVO<Payment> addPay(@RequestBody Payment payment){
-        return restTemplate.postForObject(PAYMNET_URL.concat("/com.ys.clouddemo.payment/com.ys.clouddemo.payment/add"),payment,ResultVO.class);
+        return restTemplate.postForObject(PAYMNET_URL.concat("/payment/payment/add"),payment,ResultVO.class);
+    }
+
+    @GetMapping("/get/zk")
+    public ResultVO<Payment> getPay(){
+
+
+
+        return restTemplate.getForObject(PAYMNET_URL.concat("/payment/payment/get/zk"),ResultVO.class);
     }
 }
