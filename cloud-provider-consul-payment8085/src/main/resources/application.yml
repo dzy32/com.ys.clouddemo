@@ -1,0 +1,29 @@
+
+server:
+  port: 8085
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://47.97.91.45:3306/cloud_demo?characterEncoding=utf8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+  # 注册进eureka名称
+  application:
+    name: payment-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  type-aliases-package: com.ys.clouddemo.entity
+  global-config:
+    banner: false
+    db-config:
+      update-strategy: ignored
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
