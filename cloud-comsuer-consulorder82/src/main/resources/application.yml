@@ -1,6 +1,6 @@
-
 server:
-  port: 8081
+  port: 82
+
 
 spring:
   datasource:
@@ -8,9 +8,14 @@ spring:
     password: 123456
     url: jdbc:mysql://47.97.91.45:3306/cloud_demo?characterEncoding=utf8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
-  # 注册进eureka名称
   application:
-    name: payment-service
+    name: order-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
 mybatis-plus:
   mapper-locations: classpath*:mapper/**/*Mapper.xml
   type-aliases-package: com.ys.clouddemo.entity
@@ -21,14 +26,3 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      # 域名只是在host文件做了映射。其实ip都是127.0.0.1
-      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
-  instance:
-    instance-id: payment8081
-    #显示ip地址
-    prefer-ip-address: true
