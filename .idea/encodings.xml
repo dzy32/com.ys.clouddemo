@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/api-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-comsuer-consulorder82" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsuer-consulorder82/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsuer-consulorder82/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-comsuer-order80" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsuer-order80/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsuer-order80/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-comsuer-order81" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsuer-order81/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsuer-order81/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-comsumer-hystrix-oreder84" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsumer-hystrix-oreder84/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsumer-hystrix-oreder84/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-comsumer-orederfeign83" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsumer-orederfeign83/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsumer-orederfeign83/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-server-7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server-7001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server-7001/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-server7002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server7002/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server7002/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider-consul-payment8085" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-consul-payment8085/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-consul-payment8085/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider-patment8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-patment8001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-patment8001/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider-payment8082" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-payment8082/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-payment8082/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider-payment8084" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-payment8084/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-payment8084/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

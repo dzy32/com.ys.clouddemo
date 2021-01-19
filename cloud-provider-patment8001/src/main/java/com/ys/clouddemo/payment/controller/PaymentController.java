@@ -66,4 +66,9 @@ public class PaymentController {
         return this.discoveryClient;
     }
 
+    @GetMapping("/get/hystrix/pay_info_time_out")
+    public String testHysreix(){
+       return  paymentService.paymentInfoTimeOut(1);
+    }
+
 }

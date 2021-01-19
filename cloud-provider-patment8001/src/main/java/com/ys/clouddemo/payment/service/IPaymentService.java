@@ -14,4 +14,9 @@ import com.ys.demo.entity.Payment;
  */
 public interface IPaymentService extends IService<Payment> {
 
+    String paymentInfoOk(Integer id);
+
+    String paymentInfoTimeOut(Integer id);
+
+    String paymentInfoTimeOutHandler(Integer id);
 }
