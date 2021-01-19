@@ -18,6 +18,8 @@
       <module>cloud-comsuer-order81</module>
       <module>cloud-provider-consul-payment8085</module>
       <module>cloud-comsuer-consulorder82</module>
+      <module>cloud-comsumer-orederfeign83</module>
+      <module>cloud-comsumer-hystrix-oreder84</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-provider-patment8001" />
         <module name="cloud-eureka-server-7001" />
+        <module name="cloud-comsumer-orederfeign83" />
         <module name="cloud-provider-consul-payment8085" />
         <module name="cloud-eureka-server7002" />
         <module name="api-common" />
@@ -17,6 +18,7 @@
         <module name="cloud-provider-payment8084" />
         <module name="cloud-comsuer-order81" />
         <module name="cloud-comsuer-order80" />
+        <module name="cloud-comsumer-hystrix-oreder84" />
       </profile>
     </annotationProcessing>
   </component>
