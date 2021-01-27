@@ -1,6 +1,7 @@
 package com.ys.clouddemo.payment.service.impl;
 
 
+import cn.hutool.core.util.IdUtil;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.netflix.ribbon.proxy.annotation.Hystrix;
@@ -53,5 +54,31 @@ public class PaymentServiceImpl extends ServiceImpl<PaymentMapper, Payment> impl
     @Override
     public String paymentInfoTimeOutHandler(Integer id) {
         return "paymentInfo Time out handler show" + Thread.currentThread().getName() + "id:" + id;
+    }
+
+    /**
+     * commandProperties
+     * 模拟服务熔断
+     * @param id
+     * @return
+     */
+    @Override
+    @HystrixCommand(fallbackMethod = "paymentInfoCircuitBreakerHandler", commandProperties = {
+            @HystrixProperty(name = "circuitBreaker.enabled", value = "true"), // 是否开启融断开关
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold",value = "10"), // 触发熔断请求的次数
+            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"), // 请求窗口期，即10秒内请求10这样
+            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage",value = "60") // 失败率达到多少次后触发熔断
+    })
+    public String paymentInfoCircuitBreaker(Integer id) {
+        if(id < 0){
+            throw new RuntimeException("id 不能为负数");
+        }
+        String uuid = IdUtil.simpleUUID();
+        return "模拟 熔断 --- 调用成功 流水号为："+ uuid;
+    }
+
+    @Override
+    public String paymentInfoCircuitBreakerHandler(Integer id) {
+        return "模拟 熔断 --- 调用失败 id为："+ id;
     }
 }

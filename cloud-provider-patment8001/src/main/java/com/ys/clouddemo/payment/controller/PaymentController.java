@@ -69,8 +69,14 @@ public class PaymentController {
     @GetMapping("/get/hystrix/pay_info_time_out")
     public String testHysreix(){
         log.info("-----hystrix");
-        int i = 19/0;
+//        int i = 19/0;
         return  paymentService.paymentInfoTimeOut(1);
+    }
+
+    @GetMapping("/get/circuit/{id}")
+    public String testCircuit(@PathVariable(name = "id") Integer id){
+        log.info("-----circuit");
+        return  paymentService.paymentInfoCircuitBreaker(id);
     }
 
 }
