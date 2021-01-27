@@ -68,7 +68,9 @@ public class PaymentController {
 
     @GetMapping("/get/hystrix/pay_info_time_out")
     public String testHysreix(){
-       return  paymentService.paymentInfoTimeOut(1);
+        log.info("-----hystrix");
+        int i = 19/0;
+        return  paymentService.paymentInfoTimeOut(1);
     }
 
 }

@@ -37,16 +37,16 @@ public class PaymentServiceImpl extends ServiceImpl<PaymentMapper, Payment> impl
      */
     @Override
     @HystrixCommand(fallbackMethod = "paymentInfoTimeOutHandler", commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000")
     })
     public String paymentInfoTimeOut(Integer id) {
-        Integer sleepNum = 5;
-        try {
-            // 睡眠5秒，超过响应设定值，触发fallback 方法
-            TimeUnit.SECONDS.sleep(sleepNum);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Integer sleepNum = 1;
+//        try {
+//            // 睡眠5秒，超过响应设定值，触发fallback 方法
+//            TimeUnit.SECONDS.sleep(1);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         return "当前线程：" + Thread.currentThread().getName() + "payment info time out ,id" + id;
     }
 
