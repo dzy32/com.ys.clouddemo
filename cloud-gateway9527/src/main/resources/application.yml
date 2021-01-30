@@ -1,0 +1,28 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: gateway-sevice
+  cloud:
+    gateway:
+      routes:
+#        id 在网关中唯一，无默认命名规则，建议配合服务名
+        - id: payment_routh1
+          uri: http://localhost:8081
+          predicates:
+            - Path=/payment/payment/get/**
+        - id: payment_routh2
+          uri: http://localhost:8081
+          predicates:
+            - Path=/payment/payment/get/sever
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://127.0.0.1:7002/eureka/,http://127.0.0.1:7001/eureka/
+  instance:
+    hostname: gatewayservice
+    prefer-ip-address: true
+    instance-id: gateway9527

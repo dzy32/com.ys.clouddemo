@@ -14,22 +14,13 @@
         <module name="cloud-provider-payment8082" />
         <module name="cloud-comsuer-consulorder82" />
         <module name="cloud-provider-payment8084" />
+        <module name="cloud-gateway9527" />
         <module name="cloud-provider-patment8001" />
         <module name="cloud-comsumer-orederfeign83" />
-        <module name="hystrix-dashbord9001" />
-        <module name="cloud-hystrix-dashboard9001" />
         <module name="cloud-comsuer-order81" />
         <module name="cloud-comsumer-hystrix-oreder84" />
         <module name="cloud-comsuer-order80" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="hystrix-dashbord9001" target="1.8" />
-    </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="hystrix-dashbord9001" options="-parameters" />
-    </option>
   </component>
 </project>
