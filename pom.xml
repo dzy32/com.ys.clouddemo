@@ -20,6 +20,7 @@
       <module>cloud-comsuer-consulorder82</module>
       <module>cloud-comsumer-orederfeign83</module>
       <module>cloud-comsumer-hystrix-oreder84</module>
+    <module>cloud-hystrix-dashboard9001</module>
   </modules>
   <packaging>pom</packaging>
 
