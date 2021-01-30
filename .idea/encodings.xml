@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsuer-consulorder82" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsuer-consulorder82/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsuer-consulorder82/src/main/resources" charset="UTF-8" />
@@ -19,6 +20,8 @@
     <file url="file://$PROJECT_DIR$/cloud-comsumer-orederfeign83" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsumer-orederfeign83/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-comsumer-orederfeign83/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-config-server3232/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-config-server3232/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server-7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server-7001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server-7001/src/main/resources" charset="UTF-8" />

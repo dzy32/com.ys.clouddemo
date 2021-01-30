@@ -9,13 +9,23 @@ spring:
       routes:
 #        id 在网关中唯一，无默认命名规则，建议配合服务名
         - id: payment_routh1
-          uri: http://localhost:8081
+#          uri 改为 lb加注册的服务名
+          uri: lb://payment-service
           predicates:
             - Path=/payment/payment/get/**
+#           需要header带cookie key为username ，v为ys.* 正则匹配
+            - Cookie=username,ys.*
+#            header要带 X-Request-Id，v为整数的意思
+            - Header=X-Request-Id, \d+
         - id: payment_routh2
-          uri: http://localhost:8081
+#          uri: http://localhost:8081
+          uri: lb://payment-service
           predicates:
             - Path=/payment/payment/get/sever
+      discovery:
+        locator:
+#          配置开启动态路由
+          enabled: true
 eureka:
   client:
     fetch-registry: true
