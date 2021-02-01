@@ -10,6 +10,7 @@
         <module name="cloud-eureka-server-7001" />
         <module name="cloud-provider-consul-payment8085" />
         <module name="cloud-config-server3232" />
+        <module name="cloud-config-server" />
         <module name="cloud-eureka-server7002" />
         <module name="cloud-config-client3242" />
         <module name="api-common" />
