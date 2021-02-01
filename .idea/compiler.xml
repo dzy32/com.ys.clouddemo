@@ -11,6 +11,7 @@
         <module name="cloud-provider-consul-payment8085" />
         <module name="cloud-config-server3232" />
         <module name="cloud-eureka-server7002" />
+        <module name="cloud-config-client3242" />
         <module name="api-common" />
         <module name="cloud-provider-payment8082" />
         <module name="cloud-comsuer-consulorder82" />
@@ -20,9 +21,13 @@
         <module name="cloud-comsumer-orederfeign83" />
         <module name="cloud-hystrix-dashboard9001" />
         <module name="cloud-comsuer-order81" />
+        <module name="cloud-config-client" />
         <module name="cloud-comsumer-hystrix-oreder84" />
         <module name="cloud-comsuer-order80" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-config-client" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

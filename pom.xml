@@ -22,7 +22,9 @@
       <module>cloud-comsumer-hystrix-oreder84</module>
     <module>cloud-hystrix-dashboard9001</module>
       <module>cloud-gateway9527</module>
-      <module>cloud-config-server</module>
+      <module>cloud-config-server3232</module>
+    <module>cloud-config-client</module>
+    <module>cloud-config-client3242</module>
   </modules>
   <packaging>pom</packaging>
 

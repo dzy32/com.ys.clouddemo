@@ -1,11 +1,5 @@
 server:
   port: 3232
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
 
 spring:
   cloud:
@@ -13,9 +7,14 @@ spring:
       server:
         git:
           uri: https://github.com/dzy32/springcloud-config.git
-#          分支
-          default-label: main
-#          搜索的目录
-          search-paths: /springcloud-config
+          search-paths:
+            - springcloud-config
+      label: main
   application:
     name: config-center
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
