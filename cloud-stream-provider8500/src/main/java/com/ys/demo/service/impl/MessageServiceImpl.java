@@ -1,6 +1,8 @@
 package com.ys.demo.service.impl;
 
 import com.ys.demo.service.MessageService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.cloud.stream.messaging.Source;
@@ -19,7 +21,8 @@ import java.util.UUID;
 public class MessageServiceImpl implements MessageService {
 
 
-    @Resource
+    @Autowired(required = true)
+    @Qualifier("output")
     private MessageChannel ouput;
 
     @Override
