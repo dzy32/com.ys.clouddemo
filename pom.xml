@@ -24,6 +24,8 @@
       <module>cloud-gateway9527</module>
       <module>cloud-config-server3232</module>
     <module>cloud-config-client3242</module>
+    <module>cloud-config-client3243</module>
+      <module>cloud-stream-provider8500</module>
   </modules>
   <packaging>pom</packaging>
 

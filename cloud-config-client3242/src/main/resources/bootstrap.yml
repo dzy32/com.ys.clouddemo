@@ -10,6 +10,11 @@ spring:
       name: config
       profile: test
       uri: http://localhost:3232
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 10.100.60.103
+    port: 5672
 eureka:
   client:
     fetch-registry: true
@@ -17,6 +22,7 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:7002/eureka/,http://127.0.0.1:7001/eureka/
 
+#这个的意思是为暴露接口，改动配置文件得访问一次配置才生效
 management:
   endpoints:
     web:

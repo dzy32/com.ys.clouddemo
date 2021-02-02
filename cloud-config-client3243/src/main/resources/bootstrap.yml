@@ -1,18 +1,15 @@
 server:
-  port: 3232
+  port: 3243
 
 spring:
+  application:
+    name: config-client
   cloud:
     config:
-      server:
-        git:
-#          使用https 连接git 使用ssh失败，似乎配值比较麻烦，以后补坑
-          uri: https://github.com/dzy32/springcloud-config.git
-          search-paths:
-            - springcloud-config
       label: main
-  application:
-    name: config-center
+      name: config
+      profile: test
+      uri: http://localhost:3232
   rabbitmq:
     host: 10.100.60.103
     username: guest
@@ -20,8 +17,8 @@ spring:
     port: 5672
 eureka:
   client:
-    register-with-eureka: true
     fetch-registry: true
+    register-with-eureka: true
     service-url:
       defaultZone: http://127.0.0.1:7002/eureka/,http://127.0.0.1:7001/eureka/
 
@@ -30,4 +27,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: "bus-refresh"
+        include: "*"
