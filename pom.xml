@@ -26,6 +26,8 @@
     <module>cloud-config-client3242</module>
     <module>cloud-config-client3243</module>
       <module>cloud-stream-provider8500</module>
+      <module>cloud-stream-consumer8600</module>
+      <module>cloud-stream-consumer8601</module>
   </modules>
   <packaging>pom</packaging>
 

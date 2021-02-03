@@ -12,6 +12,8 @@
         <module name="cloud-provider-consul-payment8085" />
         <module name="cloud-config-server3232" />
         <module name="cloud-config-server" />
+        <module name="cloud-stream-consumer8600" />
+        <module name="cloud-stream-consumer8601" />
         <module name="cloud-eureka-server7002" />
         <module name="cloud-config-client3242" />
         <module name="api-common" />

@@ -21,14 +21,14 @@ import java.util.UUID;
 public class MessageServiceImpl implements MessageService {
 
 
-    @Autowired(required = true)
+    @Autowired
     @Qualifier("output")
-    private MessageChannel ouput;
+    private MessageChannel output;
 
     @Override
     public String send() {
         String uuid = UUID.randomUUID().toString();
-        ouput.send(MessageBuilder.withPayload(uuid).build());
+        output.send(MessageBuilder.withPayload(uuid).build());
         System.out.println("******stream send message "+uuid);
         return null;
     }

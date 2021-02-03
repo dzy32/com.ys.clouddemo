@@ -11,6 +11,12 @@ spring:
   # 注册进eureka名称
   application:
     name: payment-service
+  zipkin:
+    base-url: http://10.100.60.103:9411
+  sleuth:
+    sampler:
+#      采样率，0-1之家，1就是完全链路追踪
+      probability: 1
 mybatis-plus:
   mapper-locations: classpath*:mapper/**/*Mapper.xml
   type-aliases-package: com.ys.clouddemo.entity

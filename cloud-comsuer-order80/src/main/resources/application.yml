@@ -10,6 +10,11 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: order-service
+  zipkin:
+    base-url: http://10.100.60.103:9411
+  sleuth:
+    sampler:
+      probability: 1
 mybatis-plus:
   mapper-locations: classpath*:mapper/**/*Mapper.xml
   type-aliases-package: com.ys.clouddemo.entity
