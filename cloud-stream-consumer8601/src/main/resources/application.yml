@@ -7,7 +7,7 @@ spring:
         input:
           destination: queue.stream.messages
           binder: rabbit1
-          group: stream
+          group: stream # 分组从而解决重复消费和持计化
       binders:
         rabbit1:
           type: rabbit

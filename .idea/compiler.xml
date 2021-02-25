@@ -29,6 +29,7 @@
         <module name="cloud-config-client" />
         <module name="cloud-comsumer-hystrix-oreder84" />
         <module name="cloud-comsuer-order80" />
+        <module name="cloud-alibaba-nacos-payment9001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

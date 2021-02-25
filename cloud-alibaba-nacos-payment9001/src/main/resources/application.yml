@@ -1,0 +1,10 @@
+spring:
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.100.60.103:8848
+  application:
+    name: nacos-provider
+server:
+  port: 9001

@@ -28,6 +28,7 @@
       <module>cloud-stream-provider8500</module>
       <module>cloud-stream-consumer8600</module>
       <module>cloud-stream-consumer8601</module>
+    <module>cloud-alibaba-nacos-payment9001</module>
   </modules>
   <packaging>pom</packaging>
 
