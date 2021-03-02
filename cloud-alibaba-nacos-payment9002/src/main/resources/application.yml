@@ -7,4 +7,4 @@ spring:
   application:
     name: service-nacos-payment
 server:
-  port: 9001
+  port: 9002

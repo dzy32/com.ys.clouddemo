@@ -4,7 +4,10 @@ spring:
     nacos:
       discovery:
         server-addr: 10.100.60.103:8848
+
   application:
-    name: service-nacos-payment
+    name: service-nacos-order
 server:
-  port: 9001
+  port: 83
+service:
+  url: http://service-nacos-payment
