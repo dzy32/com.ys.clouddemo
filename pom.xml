@@ -31,6 +31,7 @@
     <module>cloud-alibaba-nacos-payment9001</module>
     <module>cloud-alibaba-nacos-payment9002</module>
     <module>cloud-alibaba-nacos-order83</module>
+      <module>cloud-alibaba-nacos-config-clinet3377</module>
   </modules>
   <packaging>pom</packaging>
 

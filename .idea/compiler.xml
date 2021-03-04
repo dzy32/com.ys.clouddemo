@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-config-client3243" />
+        <module name="cloud-alibaba-nacos-config-clinet3377" />
         <module name="cloud-provider-consul-payment8085" />
         <module name="cloud-config-server" />
         <module name="cloud-alibaba-nacos-order83" />
