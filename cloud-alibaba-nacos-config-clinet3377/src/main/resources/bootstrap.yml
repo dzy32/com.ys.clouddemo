@@ -6,9 +6,10 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 10.100.60.103:8848
       config:
-        server-addr: 127.0.0.1:8848
+        server-addr: 10.100.60.103:8848
         file-extension: yaml
-#  标准的配置文件名 ： nacos-config-server-dev.yaml
-
+        group: TEST_GROUP #指定分组
+        namespace: a4ee8f34-c6d6-4f2d-ae35-e92d11e833a8 #指定命名空间 这里是其id，新版本可以自行自定*（此时是1.4），旧版本自定生成
+# nacos-config-server-dev.yaml
