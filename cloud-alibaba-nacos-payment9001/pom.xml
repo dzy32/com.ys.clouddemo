@@ -50,11 +50,12 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-transport-simple-http -->
+        <!--SpringCloud ailibaba sentinel -->
         <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-transport-simple-http</artifactId>
-            <version>1.8.0</version>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
+
 
     </dependencies>
 </project>

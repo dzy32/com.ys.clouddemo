@@ -1,10 +1,13 @@
 package com.ys.demo.controller;
 
+import cn.hutool.core.thread.ThreadUtil;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import static java.lang.Thread.sleep;
 
 /**
  * @author YS
@@ -19,7 +22,9 @@ public class PaymentController {
     private String serverPort;
 
     @GetMapping("/getPort/{id}")
-    public String getPort(@PathVariable(value = "id") Integer id){
+    public String getPort(@PathVariable(value = "id") Integer id) throws InterruptedException {
+
+        ThreadUtil.sleep(800);
         return "Server Port "+ serverPort +"----id--"+id;
     }
 }
