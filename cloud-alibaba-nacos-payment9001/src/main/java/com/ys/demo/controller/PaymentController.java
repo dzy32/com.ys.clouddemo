@@ -1,6 +1,7 @@
 package com.ys.demo.controller;
 
 import cn.hutool.core.thread.ThreadUtil;
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,4 +28,10 @@ public class PaymentController {
         ThreadUtil.sleep(800);
         return "Server Port "+ serverPort +"----id--"+id;
     }
+
+    @GetMapping("/testA")
+    public String testSentinel() {
+        return "Server Port "+ serverPort +"----testA--";
+    }
+
 }
