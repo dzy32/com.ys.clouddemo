@@ -11,3 +11,6 @@ server:
   port: 83
 service:
   url: http://service-nacos-payment
+feign:
+  sentinel:
+    enabled: true
